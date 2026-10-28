@@ -49,9 +49,10 @@ section {
 }
 
 section h2 {
-    font-size: 30px;
+    font-size: 32px;
     color: #38bdf8;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
 }
 
 section p {
