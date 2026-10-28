@@ -256,3 +256,62 @@ body.light {
         font-size: 27px;
     }
 }
+
+/* ABOUT ME SECTION */
+
+.content-section {
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.about-text {
+    color: var(--muted);
+    max-width: 720px;
+    margin-bottom: 16px;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.highlight-card {
+    padding: 22px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.highlight-card span {
+    color: var(--accent);
+    font-size: 13px;
+}
+
+.highlight-card h3 {
+    margin: 10px 0;
+}
+
+.highlight-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+}
