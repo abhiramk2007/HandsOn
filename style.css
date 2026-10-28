@@ -365,3 +365,38 @@ body.light {
         grid-template-columns: 1fr;
     }
 }
+
+/* PROJECT CARD ENHANCEMENTS */
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card h3 {
+    transition: color 0.2s;
+}
+
+.project-card:hover h3 {
+    color: var(--accent);
+}
+
+.project-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 18px;
+    padding-bottom: 3px;
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.project-link:hover {
+    border-bottom-color: var(--accent);
+}
+
+.project-card .tags {
+    letter-spacing: 0.3px;
+}
