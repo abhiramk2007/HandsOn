@@ -7,6 +7,7 @@
     <title>Johana Jai | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -14,7 +15,7 @@
             <a href="#" class="logo">johana.dev</a>
 
             <div class="nav-links">
-                <a href="#about"></a>
+                <a href="#about">Home</a>
                 <a href="#about-details">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -260,6 +261,27 @@
     <footer>
         <p>Designed & built by Johana Jai · 2026</p>
     </footer>
+
+<script>
+    const themeToggle = document.getElementById("theme-toggle");
+
+    themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("light");
+
+        const isLight = document.body.classList.contains("light");
+
+        themeToggle.textContent = isLight ? "☾" : "☀";
+        themeToggle.setAttribute(
+            "aria-label",
+            isLight ? "Switch to dark mode" : "Switch to light mode"
+        );
+        themeToggle.setAttribute(
+            "title",
+            isLight ? "Switch to dark mode" : "Switch to light mode"
+        );
+    });
+</script>
+
 
 </body>
 </html>
