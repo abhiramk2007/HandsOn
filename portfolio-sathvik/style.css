@@ -176,3 +176,65 @@ footer {
     flex-direction: column;
   }
 }
+/* Theme toggle button */
+#theme-toggle {
+  background: #b7eed9;
+  color: #1d1945;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Smooth theme transition */
+body,
+header,
+.hero,
+.work,
+.about,
+.contact,
+footer {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #111827;
+  color: #f3f4f6;
+}
+
+body.dark-mode header,
+body.dark-mode .hero,
+body.dark-mode .about {
+  background: #111827;
+  color: #f3f4f6;
+}
+
+body.dark-mode .work,
+body.dark-mode footer {
+  background: #080b14;
+  color: #f3f4f6;
+}
+
+body.dark-mode .contact {
+  background: #312344;
+  color: #f3f4f6;
+}
+
+body.dark-mode .project h3 {
+  color: #ffe5a0;
+}
+
+body.dark-mode .project span {
+  color: #c4c4d4;
+}
+
+body.dark-mode nav a {
+  color: #f3f4f6;
+}
+
+body.dark-mode .skills span {
+  color: #1d1945;
+}
