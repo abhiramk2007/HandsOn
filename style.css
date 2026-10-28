@@ -400,3 +400,53 @@ body.light {
 .project-card .tags {
     letter-spacing: 0.3px;
 }
+
+/* CONTACT SECTION */
+
+.contact-intro {
+    max-width: 550px;
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateX(5px);
+    border-color: var(--accent);
+}
+
+.contact-icon {
+    font-size: 25px;
+}
+
+.contact-card strong,
+.contact-card small {
+    display: block;
+}
+
+.contact-card small {
+    color: var(--muted);
+    margin-top: 3px;
+}
+
+.contact-arrow {
+    margin-left: auto;
+    color: var(--accent);
+    font-size: 20px;
+}
