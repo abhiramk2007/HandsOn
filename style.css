@@ -88,11 +88,16 @@ section p {
 }
 
 #home h2 {
-    font-size: clamp(48px, 8vw, 100px);
-    line-height: 1.05;
-    letter-spacing: -4px;
-    color: #f8fafc;
-    margin-bottom: 25px;
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #38bdf8,
+        #818cf8
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #home p {
